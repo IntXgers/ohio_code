@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(sed:*)",
+      "Bash(while read line)",
+      "Bash(do echo \"$line\")",
+      "Bash(done)",
+      "Bash(for line_num in 1 2000 4546 7500 9092)",
+      "Bash(do echo \"========================================\" echo \"LINE $line_num:\" sed -n \"$line_nump\" \"/Users/justinrussell/active_projects/LEGAL/ohio_code/ohio_case_law/src/ohio_case_law/data/jsonl_output/ohio_case_law_filtered.jsonl\")",
+      "Read(//Users/justinrussell/active_projects/LEGAL/ohio_code/ohio_revised/src/ohio_revised/scraper/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

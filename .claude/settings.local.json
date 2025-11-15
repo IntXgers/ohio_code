@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python convert_to_jsonl.py:*)",
+      "Bash(python -m json.tool:*)",
+      "Bash(python -c:*)",
+      "Bash(python:*)",
+      "Bash(tree:*)",
+      "Bash(for dir in ohio_case_law/src/ohio_case_law/data/pre_enriched_input/*/)",
+      "Bash(done)",
+      "Bash(python3:*)",
+      "Bash(cat:*)",
+      "Bash(curl:*)",
+      "Bash(cp:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

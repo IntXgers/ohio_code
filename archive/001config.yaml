@@ -1,0 +1,15 @@
+# core/config.yaml
+model:
+  path: "/Users/justinrussell/ohio_code/llm_model/Meta-Llama-3.1-8B-Instruct-Q8_0.gguf"
+  context_size: 8192
+  threads: 8
+
+lmdb:
+  path: "ohio_revised/data/sections.lmdb"
+  size: 10737418240  # 10GB
+
+citation:
+  map_path: "ohio_revised/data/citation_analysis/citation_map.json"
+
+corpus:
+  path: "ohio_revised/data/pre_enriched_input/ohio_revised_code_complete.jsonl"
