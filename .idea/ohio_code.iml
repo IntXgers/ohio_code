@@ -5,19 +5,21 @@
       <sourceFolder url="file://$MODULE_DIR$/ohio_administration/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ohio_constitution/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ohio_revised/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ohio_case_law/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/packages/utils/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ohio_case_law_old/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ohio_caselaw/src" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
       <excludeFolder url="file://$MODULE_DIR$/llm_model" />
       <excludeFolder url="file://$MODULE_DIR$/ohio_revised/archive" />
       <excludeFolder url="file://$MODULE_DIR$/ohio_administration/src/ohio_administration/data/ohio__administration_codes" />
       <excludeFolder url="file://$MODULE_DIR$/ohio_administration/src/ohio_administration/data/ohio__administration_codes/ohio_admin_complete_json" />
       <excludeFolder url="file://$MODULE_DIR$/ohio_administration/src/ohio_administration/data/ohio_admin_complete_jsonl" />
-      <excludeFolder url="file://$MODULE_DIR$/ohio_case_law/src/ohio_case_law/data/pre_enriched_input" />
       <excludeFolder url="file://$MODULE_DIR$/ohio_constitution/src/ohio_constitution/data/scraped_constitution" />
       <excludeFolder url="file://$MODULE_DIR$/ohio_revised/src/ohio_revised/data" />
       <excludeFolder url="file://$MODULE_DIR$/archive" />
       <excludeFolder url="file://$MODULE_DIR$/ohio_constitution/src/ohio_constitution/data" />
+      <excludeFolder url="file://$MODULE_DIR$/ohio_case_law_old/src/ohio_case_law_old/data/pre_enriched_input" />
+      <excludeFolder url="file://$MODULE_DIR$/ohio_caselaw/src/ohio_caselaw/data" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.13 virtualenv at ~/active_projects/LEGAL/ohio_code/.venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

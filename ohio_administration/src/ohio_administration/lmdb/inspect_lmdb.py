@@ -37,10 +37,15 @@ def inspect_database(db_name: str, num_examples: int = 3):
                 try:
                     value_obj = json.loads(value.decode('utf-8'))
                     print(f"🔑 Key: {key_str}")
-                    print(f"📄 Value:")
-                    print(json.dumps(value_obj, indent=2)[:1000])  # Limit to 1000 chars
-                    if len(json.dumps(value_obj)) > 1000:
-                        print("... (truncated)")
+                    print(f"📄 Fields: {', '.join(value_obj.keys())}")
+
+                    # Show important fields with values
+                    important_fields = ['section_number', 'is_clickable', 'has_citations',
+                                       'citation_count', 'in_complex_chain', 'section_title']
+                    print(f"📋 Key Values:")
+                    for field in important_fields:
+                        if field in value_obj:
+                            print(f"   {field}: {value_obj[field]}")
                     print()
                 except:
                     print(f"🔑 Key: {key_str}")

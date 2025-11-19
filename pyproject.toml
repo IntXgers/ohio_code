@@ -7,4 +7,4 @@ dependencies = [
 ]
 
 [tool.uv.workspace]
-members = ["ohio_administration", "ohio_revised", "ohio_constitution", "packages/utils",  "ohio_case_law"]
+members = ["ohio_administration", "ohio_revised", "ohio_constitution", "packages/utils",  "ohio_case_law", "ohio_caselaw"]

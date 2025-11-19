@@ -71,6 +71,7 @@ class ComprehensiveLMDBBuilder:
         self.chains_map: Dict[str, Dict] = {}
         self.sections_data: Dict[str, Dict] = {}
         self.citation_contexts_map: Dict[str, List[Dict]] = {}  # Enhanced citation contexts
+        self.reverse_citation_map: Dict[str, Set[str]] = {}  # Reverse citations (who cites this)
 
         # Auto-enrichment
         self.enable_enrichment = enable_enrichment
@@ -135,6 +136,14 @@ class ComprehensiveLMDBBuilder:
                 self.citation_map = json.load(f)
             logger.info(f"Loaded citation map with {len(self.citation_map)} entries")
 
+            # Build reverse citation map immediately for is_clickable calculation
+            for section, references in self.citation_map.items():
+                for ref in references:
+                    if ref not in self.reverse_citation_map:
+                        self.reverse_citation_map[ref] = set()
+                    self.reverse_citation_map[ref].add(section)
+            logger.info(f"Built reverse citation map: {len(self.reverse_citation_map)} entries")
+
         # Load complex chains
         if self.complex_chains_file.exists():
             with open(self.complex_chains_file, 'r') as f:
@@ -172,6 +181,11 @@ class ComprehensiveLMDBBuilder:
                     section_title = header.split('|')[1].strip() if '|' in header else ''
                     paragraphs = doc.get('paragraphs', [])
 
+                    # Check if section has graph data (for UI clickability)
+                    has_forward_citations = section_num in self.citation_map
+                    has_reverse_citations = section_num in self.reverse_citation_map
+                    is_clickable = has_forward_citations or has_reverse_citations
+
                     # Build complete section record
                     section_data = {
                         'section_number': section_num,
@@ -183,9 +197,10 @@ class ComprehensiveLMDBBuilder:
                         'full_text': '\n'.join(paragraphs),
                         'word_count': sum(len(p.split()) for p in paragraphs),
                         'paragraph_count': len(paragraphs),
-                        'has_citations': section_num in self.citation_map,
+                        'has_citations': has_forward_citations,
                         'citation_count': len(self.citation_map.get(section_num, [])),
                         'in_complex_chain': section_num in self.chains_map,
+                        'is_clickable': is_clickable,  # For graph visualization
                         'scraped_date': datetime.now().isoformat()
                     }
 

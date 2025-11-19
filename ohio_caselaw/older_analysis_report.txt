@@ -1,0 +1,1185 @@
+====================================================================================================
+ANALYZING OLDER CASE LAW JSON FILES
+====================================================================================================
+
+Source: /Volumes/Jnice4tb/ohio_scotus_caselaw/older
+
+Found 20 reporter directories:
+
+
+====================================================================================================
+Reporter: ohio
+====================================================================================================
+Found 622 JSON files
+Processing all 622 files... 100... 200... 300... 400... 500... 600... Done! (622 files processed)
+
+====================================================================================================
+Reporter: ohio-app
+====================================================================================================
+Found 578 JSON files
+Processing all 578 files... 100... 200... 300... 400... 500... Done! (578 files processed)
+
+====================================================================================================
+Reporter: ohio-app-2d
+====================================================================================================
+Found 452 JSON files
+Processing all 452 files... 100... 200... 300... 400... Done! (452 files processed)
+
+====================================================================================================
+Reporter: ohio-app-3d
+====================================================================================================
+Found 906 JSON files
+Processing all 906 files... 100... 200... 300... 400... 500... 600... 700... 800... 900... Done! (906 files processed)
+
+====================================================================================================
+Reporter: ohio-app-unrep
+====================================================================================================
+Found 582 JSON files
+Processing all 582 files... 100... 200... 300... 400... 500... Done! (582 files processed)
+
+====================================================================================================
+Reporter: ohio-ca
+====================================================================================================
+Found 353 JSON files
+Processing all 353 files... 100... 200... 300... Done! (353 files processed)
+
+====================================================================================================
+Reporter: ohio-cc
+====================================================================================================
+Found 845 JSON files
+Processing all 845 files... 100... 200... 300... 400... 500... 600... 700... 800... Done! (845 files processed)
+
+====================================================================================================
+Reporter: ohio-cc-dec
+====================================================================================================
+Found 829 JSON files
+Processing all 829 files... 100... 200... 300... 400... 500... 600... 700... 800... Done! (829 files processed)
+
+====================================================================================================
+Reporter: ohio-cc-ns
+====================================================================================================
+Found 641 JSON files
+Processing all 641 files... 100... 200... 300... 400... 500... 600... Done! (641 files processed)
+
+====================================================================================================
+Reporter: ohio-ch
+====================================================================================================
+Found 500 JSON files
+Processing all 500 files... 100... 200... 300... 400... 500... Done! (500 files processed)
+
+====================================================================================================
+Reporter: ohio-cir-dec
+====================================================================================================
+Found 911 JSON files
+Processing all 911 files... 100... 200... 300... 400... 500... 600... 700... 800... 900... Done! (911 files processed)
+
+====================================================================================================
+Reporter: ohio-law-abs
+====================================================================================================
+Found 4937 JSON files
+Processing all 4937 files... 100... 200... 300... 400... 500... 600... 700... 800... 900... 1000... 1100... 1200... 1300... 1400... 1500... 1600... 1700... 1800... 1900... 2000... 2100... 2200... 2300... 2400... 2500... 2600... 2700... 2800... 2900... 3000... 3100... 3200... 3300... 3400... 3500... 3600... 3700... 3800... 3900... 4000... 4100... 4200... 4300... 4400... 4500... 4600... 4700... 4800... 4900... Done! (4937 files processed)
+
+====================================================================================================
+Reporter: ohio-lr
+====================================================================================================
+Found 580 JSON files
+Processing all 580 files... 100... 200... 300... 400... 500... Done! (580 files processed)
+
+====================================================================================================
+Reporter: ohio-misc
+====================================================================================================
+Found 326 JSON files
+Processing all 326 files... 100... 200... 300... Done! (326 files processed)
+
+====================================================================================================
+Reporter: ohio-misc-2d
+====================================================================================================
+Found 183 JSON files
+Processing all 183 files... 100... Done! (183 files processed)
+
+====================================================================================================
+Reporter: ohio-np
+====================================================================================================
+Found 577 JSON files
+Processing all 577 files... 100... 200... 300... 400... 500... Done! (577 files processed)
+
+====================================================================================================
+Reporter: ohio-np-ns
+====================================================================================================
+Found 626 JSON files
+Processing all 626 files... 100... 200... 300... 400... 500... 600... Done! (626 files processed)
+
+====================================================================================================
+Reporter: ohio-st
+====================================================================================================
+Found 2222 JSON files
+Processing all 2222 files... 100... 200... 300... 400... 500... 600... 700... 800... 900... 1000... 1100... 1200... 1300... 1400... 1500... 1600... 1700... 1800... 1900... 2000... 2100... 2200... Done! (2222 files processed)
+
+====================================================================================================
+Reporter: ohio-st-2d
+====================================================================================================
+Found 495 JSON files
+Processing all 495 files... 100... 200... 300... 400... Done! (495 files processed)
+
+====================================================================================================
+Reporter: ohio-st-3d
+====================================================================================================
+Found 5040 JSON files
+Processing all 5040 files... 100... 200... 300... 400... 500... 600... 700... 800... 900... 1000... 1100... 1200... 1300... 1400... 1500... 1600... 1700... 1800... 1900... 2000... 2100... 2200... 2300... 2400... 2500... 2600... 2700... 2800... 2900... 3000... 3100... 3200... 3300... 3400... 3500... 3600... 3700... 3800... 3900... 4000... 4100... 4200... 4300... 4400... 4500... 4600... 4700... 4800... 4900... 5000... Done! (5040 files processed)
+
+====================================================================================================
+COMPREHENSIVE ANALYSIS SUMMARY
+====================================================================================================
+
+📊 TOTAL FILES: 22,205
+
+
+====================================================================================================
+REPORTER DIRECTORIES → COURTS MAPPING
+====================================================================================================
+
+ohio:
+  → Supreme Court of Ohio                              (622 files)
+
+ohio-app:
+  → Ohio Court of Appeals                              (578 files)
+
+ohio-app-2d:
+  → Ohio Court of Appeals                              (451 files)
+  → Supreme Court of Ohio                              (1 files)
+
+ohio-app-3d:
+  → Ohio Court of Appeals                              (906 files)
+
+ohio-app-unrep:
+  → Anderson's Unreported Ohio Appellate Cases         (20 files)
+  → Ohio Court of Appeals                              (562 files)
+
+ohio-ca:
+  → Clermont County Circuit Court                      (1 files)
+  → Ohio Court of Appeals                              (352 files)
+
+ohio-cc:
+  → Adams County Circuit Court                         (1 files)
+  → Allen County Circuit Court                         (4 files)
+  → Ashtabula County Circuit Court                     (2 files)
+  → Belmont County Circuit Court                       (1 files)
+  → Brown County Circuit Court                         (1 files)
+  → Butler County Circuit Court                        (4 files)
+  → Champaign County Circuit Court                     (1 files)
+  → Clark County Circuit Court                         (1 files)
+  → Clinton County Circuit Court                       (1 files)
+  → Columbiana County Circuit Court                    (3 files)
+  → Crawford Circuit Court                             (1 files)
+  → Crawford County Circuit Court                      (1 files)
+  → Cuyahoga Circuit Court                             (8 files)
+  → Cuyahoga County Circuit Court                      (34 files)
+  → Defiance Circuit Court                             (1 files)
+  → Fairfield County Circuit Court                     (2 files)
+  → Fayette County Circuit Court                       (1 files)
+  → Franklin County Circuit Court                      (11 files)
+  → Geauga County Circuit Court                        (1 files)
+  → Greene County Circuit Court                        (1 files)
+  → Guernsey County Circuit Court                      (1 files)
+  → Hamilton Circuit Court                             (8 files)
+  → Hamilton County Circuit Court                      (74 files)
+  → Hancock Circuit Court                              (1 files)
+  → Hancock County Circuit Court                       (7 files)
+  → Hardin Circuit Court                               (1 files)
+  → Hardin County Circuit Court                        (1 files)
+  → Harrison County Circuit Court                      (1 files)
+  → Huron Circuit Court                                (2 files)
+  → Jackson County Circuit Court                       (1 files)
+  → Lake County Circuit Court                          (3 files)
+  → Licking Circuit Court                              (1 files)
+  → Licking County Circuit Court                       (6 files)
+  → Lorain County Circuit Court                        (1 files)
+  → Lucas Circuit Court                                (14 files)
+  → Lucas County Circuit Court                         (40 files)
+  → Mahoning County Circuit Court                      (1 files)
+  → Meigs County Circuit Court                         (1 files)
+  → Muskingum County Circuit Court                     (2 files)
+  → Ohio Circuit Court                                 (573 files)
+  → Ottawa County Circuit Court                        (1 files)
+  → Paulding Circuit Court                             (1 files)
+  → Pickaway Circuit Court                             (1 files)
+  → Pickaway County Circuit Court                      (3 files)
+  → Putnam County Circuit Court                        (1 files)
+  → Ross County Circuit Court                          (1 files)
+  → Sandusky Circuit Court                             (1 files)
+  → Scioto County Circuit Court                        (1 files)
+  → Seneca County Circuit Court                        (4 files)
+  → Stark Circuit Court                                (1 files)
+  → Stark County Circuit Court                         (1 files)
+  → Summit County Circuit Court                        (1 files)
+  → Tuscarawas County Circuit Court                    (1 files)
+  → Union County Circuit Court                         (1 files)
+  → Vinton County Circuit Court                        (1 files)
+  → Warren County Circuit Court                        (2 files)
+  → Wayne County Circuit Court                         (2 files)
+  → Wood County Circuit Court                          (2 files)
+
+ohio-cc-dec:
+  → Allen Circuit Court                                (2 files)
+  → Ashtabula Circuit Court                            (2 files)
+  → Champaign Circuit Court                            (1 files)
+  → Clermont Circuit Court                             (2 files)
+  → Cuyahoga Circuit Court                             (390 files)
+  → Delaware Circuit Court                             (2 files)
+  → Erie Circuit Court                                 (1 files)
+  → Fairfield Circuit Court                            (1 files)
+  → Franklin Circuit Court                             (4 files)
+  → Hamilton Circuit Court                             (53 files)
+  → Jefferson Circuit Court                            (2 files)
+  → Knox County Circuit Court                          (1 files)
+  → Licking Circuit Court                              (2 files)
+  → Lorain Circuit Court                               (21 files)
+  → Lucas Circuit Court                                (15 files)
+  → Madison Circuit Court                              (1 files)
+  → Mahoning Circuit Court                             (3 files)
+  → Medina Circuit Court                               (5 files)
+  → Montgomery Circuit Court                           (1 files)
+  → Ohio Circuit Court                                 (43 files)
+  → Ohio Court of Appeals                              (212 files)
+  → Putnam Circuit Court                               (1 files)
+  → Richland Circuit Court                             (2 files)
+  → Sandusky Circuit Court                             (1 files)
+  → Stark Circuit Court                                (7 files)
+  → Summit Circuit Court                               (42 files)
+  → Wood Circuit Court                                 (12 files)
+
+ohio-cc-ns:
+  → Ashtabula County Circuit Court                     (2 files)
+  → Belmont County Court                               (1 files)
+  → Butler County Court                                (1 files)
+  → Butler County Court of Appeals                     (2 files)
+  → Clark County Court                                 (1 files)
+  → Clinton County Court of Appeals                    (2 files)
+  → Columbiana County Circuit Court                    (1 files)
+  → Coshocton County Circuit Court                     (1 files)
+  → Coshocton County Court                             (1 files)
+  → Cuyahoga County Circuit Court                      (233 files)
+  → Cuyahoga County Court                              (5 files)
+  → Erie County Circuit Court                          (1 files)
+  → Fairfield County Circuit Court                     (1 files)
+  → Fairfield County Court                             (2 files)
+  → Franklin County Circuit Court                      (5 files)
+  → Franklin County Court                              (3 files)
+  → Guernsey County Circuit Court                      (1 files)
+  → Hamilton County Circuit Court                      (28 files)
+  → Hamilton County Court                              (54 files)
+  → Hamilton County Court of Appeals                   (6 files)
+  → Henry County Court                                 (1 files)
+  → Holmes County Court                                (1 files)
+  → Huron County Circuit Court                         (1 files)
+  → Huron County Court of Appeals                      (1 files)
+  → Jefferson County Court                             (1 files)
+  → Knox County Court of Appeals                       (1 files)
+  → Licking County Circuit Court                       (1 files)
+  → Licking County Court of Appeals                    (7 files)
+  → Lorain County Circuit Court                        (10 files)
+  → Lucas County Circuit Court                         (8 files)
+  → Lucas County Court                                 (7 files)
+  → Lucas County Court of Appeals                      (2 files)
+  → Mahoning County Court of Appeals                   (1 files)
+  → Medina County Circuit Court                        (5 files)
+  → Miami County Circuit Court                         (1 files)
+  → Morrow County Court                                (2 files)
+  → Muskingum County Court                             (4 files)
+  → Ohio Circuit Court                                 (15 files)
+  → Ohio Court of Appeals                              (146 files)
+  → Ottawa County Court                                (1 files)
+  → Perry County Circuit Court                         (1 files)
+  → Perry County Court                                 (1 files)
+  → Richland County Circuit Court                      (5 files)
+  → Richland County Court                              (3 files)
+  → Sandusky County Circuit Court                      (2 files)
+  → Scioto County Circuit Court                        (1 files)
+  → Stark County Circuit Court                         (2 files)
+  → Stark County Court                                 (8 files)
+  → Stark County Court of Appeals                      (1 files)
+  → Summit County Circuit Court                        (30 files)
+  → Wayne County Court                                 (1 files)
+  → Wayne County Court of Appeals                      (1 files)
+  → Williams County Circuit Court                      (1 files)
+  → Wood County Circuit Court                          (2 files)
+  → Wood County Court                                  (14 files)
+  → Wyandot County Court                               (1 files)
+
+ohio-ch:
+  → Supreme Court of Ohio                              (500 files)
+
+ohio-cir-dec:
+  → Allen Circuit Court                                (4 files)
+  → Ashland Circuit Court                              (1 files)
+  → Ashtabula Circuit Court                            (4 files)
+  → Auglaize Circuit Court                             (1 files)
+  → Belmont Circuit Court                              (1 files)
+  → Butler Circuit Court                               (12 files)
+  → Champaign Circuit Court                            (2 files)
+  → Clark Circuit Court                                (4 files)
+  → Clermont Circuit Court                             (5 files)
+  → Clinton Circuit Court                              (3 files)
+  → Columbiana Circuit Court                           (1 files)
+  → Crawford Circuit Court                             (1 files)
+  → Cuyahoga Circuit Court                             (94 files)
+  → Cuyahoga County Circuit Court                      (1 files)
+  → Darke Circuit Court                                (2 files)
+  → Defiance Circuit Court                             (5 files)
+  → Delaware Circuit Court                             (1 files)
+  → Erie Circuit Court                                 (4 files)
+  → Fairfield Circuit Court                            (1 files)
+  → Fayette Circuit Court                              (2 files)
+  → Franklin Circuit Court                             (15 files)
+  → Franklin County Circuit Court                      (2 files)
+  → Fulton Circuit Court                               (2 files)
+  → Geauga Circuit Court                               (1 files)
+  → Greene Circuit Court                               (2 files)
+  → Guernsey Circuit Court                             (1 files)
+  → Hamilton Circuit Court                             (187 files)
+  → Hamilton County Circuit Court                      (5 files)
+  → Hancock Circuit Court                              (12 files)
+  → Hardin Circuit Court                               (1 files)
+  → Harrison Circuit Court                             (2 files)
+  → Holmes Circuit Court                               (1 files)
+  → Huron Circuit Court                                (6 files)
+  → Huron County Circuit Court                         (2 files)
+  → Jefferson Circuit Court                            (4 files)
+  → Knox County Circuit Court                          (1 files)
+  → Lake County Circuit Court                          (4 files)
+  → Licking Circuit Court                              (14 files)
+  → Logan Circuit Court                                (5 files)
+  → Logan County Circuit Court                         (1 files)
+  → Lorain Circuit Court                               (4 files)
+  → Lucas Circuit Court                                (109 files)
+  → Lucas County Circuit Court                         (5 files)
+  → Mahoning Circuit Court                             (1 files)
+  → Marion Circuit Court                               (1 files)
+  → Meigs Circuit Court                                (1 files)
+  → Miami Circuit Court                                (1 files)
+  → Montgomery Circuit Court                           (4 files)
+  → Morrow Circuit Court                               (1 files)
+  → Muskingum Circuit Court                            (1 files)
+  → Ohio Circuit Court                                 (311 files)
+  → Ottawa Circuit Court                               (6 files)
+  → Paulding Circuit Court                             (2 files)
+  → Perry Circuit Court                                (1 files)
+  → Pickaway Circuit Court                             (3 files)
+  → Pike Circuit Court                                 (1 files)
+  → Portage Circuit Court                              (1 files)
+  → Putnam Circuit Court                               (3 files)
+  → Richland Circuit Court                             (3 files)
+  → Ross Circuit Court                                 (1 files)
+  → Sandusky Circuit Court                             (5 files)
+  → Seneca Circuit Court                               (4 files)
+  → Shelby Circuit Court                               (2 files)
+  → Stark Circuit Court                                (4 files)
+  → Stark County Circuit Court                         (1 files)
+  → Summit Circuit Court                               (1 files)
+  → Tuscarawas Circuit Court                           (1 files)
+  → Van Wert Circuit Court                             (1 files)
+  → Warren Circuit Court                               (3 files)
+  → Williams Circuit Court                             (1 files)
+  → Wood Circuit Court                                 (8 files)
+  → Wood County Circuit Court                          (1 files)
+  → Wyandot Circuit Court                              (2 files)
+
+ohio-law-abs:
+  → Akron Municipal Court                              (2 files)
+  → Allen County Court of Common Pleas                 (2 files)
+  → Arizona Supreme Court                              (1 files)
+  → Ashtabula County Court of Common Pleas             (3 files)
+  → Athens County Court of Common Pleas                (2 files)
+  → Bedford Municipal Court                            (2 files)
+  → Bellefontaine Municipal Court                      (1 files)
+  → Butler County Court of Common Pleas                (3 files)
+  → Butler County Probate Court                        (1 files)
+  → Champaign County Probate Court                     (1 files)
+  → Cincinnati Municipal Court                         (2 files)
+  → Cincinnati Superior Court                          (10 files)
+  → Clark County Court of Common Pleas                 (2 files)
+  → Clark County Probate Court                         (1 files)
+  → Clermont County Court of Common Pleas              (1 files)
+  → Columbiana County Court of Common Pleas            (2 files)
+  → Columbiana County Probate Court                    (4 files)
+  → Columbus Municipal Court                           (1 files)
+  → Cuyahoga County Court of Common Pleas              (27 files)
+  → Cuyahoga County Juvenile Court                     (2 files)
+  → Cuyahoga County Municipal Court                    (2 files)
+  → Cuyahoga County Probate Court                      (14 files)
+  → Dayton City Municipal Court                        (1 files)
+  → Delaware County Court of Common Pleas              (1 files)
+  → Fayette County Court of Common Pleas               (7 files)
+  → Findlay Municipal Court                            (1 files)
+  → Franklin County Court of Common Pleas              (15 files)
+  → Franklin County Probate Court                      (2 files)
+  → Fulton County Probate Court                        (1 files)
+  → Hamilton County Court of Common Pleas              (27 files)
+  → Hamilton County Probate Court                      (5 files)
+  → Highland County Court of Common Pleas              (2 files)
+  → Huron County Juvenile Court                        (1 files)
+  → Huron County Probate Court                         (2 files)
+  → Jackson County Court of Common Pleas               (1 files)
+  → Jefferson County Court of Common Pleas             (3 files)
+  → Lake County Probate Court                          (1 files)
+  → Lakewood Municipal Court                           (1 files)
+  → Lawrence County Court of Common Pleas              (1 files)
+  → Licking County Court of Common Pleas               (6 files)
+  → Lucas County District Court                        (1 files)
+  → Lucas County Municipal Court                       (2 files)
+  → Madison County Court of Common Pleas               (6 files)
+  → Mahoning County Court of Common Pleas              (2 files)
+  → Marion County Court of Common Pleas                (2 files)
+  → Marion County Juvenile Court                       (1 files)
+  → Marion County Probate Court                        (1 files)
+  → Meigs County Court of Common Pleas                 (6 files)
+  → Miami County Court of Common Pleas                 (3 files)
+  → Monroe County Court of Common Pleas                (2 files)
+  → Montgomery County Court of Common Pleas            (12 files)
+  → Montgomery County Probate Court                    (10 files)
+  → Muskingum County Court of Common Pleas             (3 files)
+  → Oberlin Municipal Court                            (1 files)
+  → Ohio Board of Tax Appeals                          (5 files)
+  → Ohio Civil Rights Commission                       (1 files)
+  → Ohio Court of Appeals                              (1,494 files)
+  → Ohio Public Utilities Commission                   (3 files)
+  → Ohio State Racing Commission                       (1 files)
+  → Paulding County Court of Common Pleas              (3 files)
+  → Pickaway County Court of Common Pleas              (2 files)
+  → Portage County Probate Court                       (1 files)
+  → Portsmouth Municipal Court                         (1 files)
+  → Preble County Court of Common Pleas                (1 files)
+  → Preble County Juvenile Court                       (1 files)
+  → Preble County Probate Court                        (3 files)
+  → Public Utilities Commission                        (1 files)
+  → Sandusky County Court of Common Pleas              (2 files)
+  → Scioto County Court of Common Pleas                (4 files)
+  → Shelby County Probate Court                        (1 files)
+  → South Carolina Supreme Court                       (1 files)
+  → South Euclid Municipal Court                       (3 files)
+  → Springfield Municipal Court                        (1 files)
+  → Stark County Court of Common Pleas                 (3 files)
+  → Summit County Court of Common Pleas                (2 files)
+  → Supreme Court of Ohio                              (3,106 files)
+  → Supreme Court of the United States                 (6 files)
+  → Toledo Municipal Court                             (3 files)
+  → Trumbull County Court of Common Pleas              (2 files)
+  → Tuscarawas County Court of Common Pleas            (10 files)
+  → United States Court of Appeals for the Second Circuit (1 files)
+  → United States Court of Appeals for the Sixth Circuit (19 files)
+  → United States Court of Appeals for the Third Circuit (1 files)
+  → United States District Court for the District of New Hampshire (1 files)
+  → United States District Court for the District of Ohio (1 files)
+  → United States District Court for the District of Oregon (1 files)
+  → United States District Court for the Northern District of Ohio (21 files)
+  → United States District Court for the Southern District of Ohio (9 files)
+  → United States District Court for the Western District of Virginia (1 files)
+  → Van Wert County Court of Common Pleas              (2 files)
+  → Vinton County Court of Common Pleas                (2 files)
+  → Williams County Court of Common Pleas              (1 files)
+
+ohio-lr:
+  → Allen County Court                                 (1 files)
+  → Clermont County Court                              (3 files)
+  → Columbiana County Court                            (3 files)
+  → Cuyahoga County Court                              (28 files)
+  → Erie County Court                                  (2 files)
+  → Franklin County Court                              (34 files)
+  → Hamilton County Court                              (15 files)
+  → Hancock County Court                               (1 files)
+  → Hocking County Court                               (4 files)
+  → Jackson County Court                               (1 files)
+  → Lake County Court                                  (3 files)
+  → Lawrence County Court                              (2 files)
+  → Logan County Court                                 (2 files)
+  → Lucas County Court                                 (11 files)
+  → Mahoning County Court                              (4 files)
+  → Marion County Court                                (2 files)
+  → Mercer County Court                                (2 files)
+  → Monroe County Court                                (1 files)
+  → Montgomery County Court                            (10 files)
+  → Ohio Court of Appeals                              (29 files)
+  → Paulding County Court                              (1 files)
+  → Pickaway County Court                              (1 files)
+  → Pike County Court                                  (1 files)
+  → Richland County Court                              (1 files)
+  → Scioto County Court                                (5 files)
+  → Stark County Court                                 (11 files)
+  → Summit County Court                                (5 files)
+  → Supreme Court of Ohio                              (394 files)
+  → Trumbull County Court                              (1 files)
+  → United States Court of Appeals for the Sixth Circuit (1 files)
+  → United States District Court for the Northern District of Ohio (1 files)
+
+ohio-misc:
+  → Adams County Court of Common Pleas                 (1 files)
+  → Akron Municipal Court                              (11 files)
+  → Allen County Court of Common Pleas                 (2 files)
+  → Ashtabula County Court of Common Pleas             (1 files)
+  → Ashtabula Municipal Court                          (2 files)
+  → Bellefontaine Municipal Court                      (1 files)
+  → Belmont County Court                               (2 files)
+  → Belmont County Court of Common Pleas               (2 files)
+  → Boss County Court of Common Pleas                  (1 files)
+  → Butler County Court of Common Pleas                (1 files)
+  → Clark County Court of Common Pleas                 (2 files)
+  → Clermont County Court of Common Pleas              (3 files)
+  → Cleveland Heights Municipal Court                  (3 files)
+  → Clinton County Court of Common Pleas               (1 files)
+  → Columbiana County Court of Common Pleas            (2 files)
+  → Columbus Municipal Court                           (1 files)
+  → Crawford County Municipal Court                    (1 files)
+  → Cuyahoga County Common Pleas Court                 (3 files)
+  → Cuyahoga County Court of Common Pleas              (41 files)
+  → Cuyahoga County Juvenile Court                     (1 files)
+  → Cuyahoga County Probate Court                      (5 files)
+  → Dayton Municipal Court                             (3 files)
+  → Erie County Court of Common Pleas                  (1 files)
+  → Fairfield County Court of Common Pleas             (1 files)
+  → Fostoria Municipal Court                           (1 files)
+  → Franklin County Court of Common Pleas              (16 files)
+  → Franklin County Municipal Court                    (9 files)
+  → Fulton County Court of Common Pleas                (3 files)
+  → Greene County Court of Common Pleas                (1 files)
+  → Hamilton County Court of Common Pleas              (16 files)
+  → Hamilton County Municipal Court                    (7 files)
+  → Hamilton County Probate Court                      (4 files)
+  → Harrison County Court                              (1 files)
+  → Highland County Court of Common Pleas              (1 files)
+  → Kettering Municipal Court                          (3 files)
+  → Lake County Court of Common Pleas                  (6 files)
+  → Lake County Probate Court                          (1 files)
+  → Lawrence County Court of Common Pleas              (1 files)
+  → Licking County Court of Common Pleas               (2 files)
+  → Lorain County Court of Common Pleas                (1 files)
+  → Lucas County Court of Common Pleas                 (5 files)
+  → Mahoning County Court of Common Pleas              (4 files)
+  → Marion County Court of Common Pleas                (1 files)
+  → Medina County Court of Common Pleas                (1 files)
+  → Mercer County Court of Common Pleas                (1 files)
+  → Miamisburg Municipal Court                         (1 files)
+  → Montgomery County Court of Common Pleas            (18 files)
+  → Ohio Board of Tax Appeals                          (3 files)
+  → Ohio Court of Appeals                              (1 files)
+  → Ohio Court of Claims                               (4 files)
+  → Ohio Public Utilities Commission                   (2 files)
+  → Paulding County Court of Common Pleas              (5 files)
+  → Pickaway County Court of Common Pleas              (2 files)
+  → Preble County Court of Common Pleas                (2 files)
+  → Richland County Court of Common Pleas              (5 files)
+  → Ross County Court of Common Pleas                  (1 files)
+  → Scioto County Court of Common Pleas                (10 files)
+  → Seneca County Court of Common Pleas                (1 files)
+  → Shaker Heights Municipal Court                     (6 files)
+  → South Euclid Municipal Court                       (3 files)
+  → Stark County Court of Common Pleas                 (5 files)
+  → Summit County Court of Common Pleas                (1 files)
+  → Summit County Probate Court                        (1 files)
+  → Supreme Court of the United States                 (1 files)
+  → Toledo Municipal Court                             (2 files)
+  → Tuscarawas County Court of Common Pleas            (3 files)
+  → United States Board of Tax Appeals                 (1 files)
+  → United States Court of Appeals for the Sixth Circuit (25 files)
+  → United States District Court for the Eastern District of Kentucky (1 files)
+  → United States District Court for the Northern District of Ohio (23 files)
+  → United States District Court for the Southern District of Ohio (19 files)
+  → Van Wert County Court of Common Pleas              (1 files)
+  → Wayne County Court of Common Pleas                 (1 files)
+  → Wood County Court of Common Pleas                  (1 files)
+
+ohio-misc-2d:
+  → Akron Municipal Court                              (1 files)
+  → Athens County Municipal Court                      (5 files)
+  → Avon Lake Municipal Court                          (1 files)
+  → Butler County Court of Common Pleas                (2 files)
+  → Clermont County Court of Common Pleas              (25 files)
+  → Clermont County Municipal Court                    (1 files)
+  → Cleveland County Municipal Court                   (1 files)
+  → Cleveland Municipal Court                          (8 files)
+  → Cuyahoga County Court of Common Pleas              (2 files)
+  → Dayton County Municipal Court                      (1 files)
+  → Delaware County Court of Common Pleas              (1 files)
+  → Erie County Court of Common Pleas                  (1 files)
+  → Franklin County Court of Common Pleas              (16 files)
+  → Franklin County Municipal Court                    (7 files)
+  → Franklin County Probate Court                      (1 files)
+  → Geauga County Court of Common Pleas                (1 files)
+  → Greene County Court of Common Pleas                (1 files)
+  → Hamilton County Court of Common Pleas              (2 files)
+  → Hamilton County Municipal Court                    (7 files)
+  → Hocking County Municipal Court                     (1 files)
+  → Jackson County Court of Common Pleas               (1 files)
+  → Lake County Court of Common Pleas                  (4 files)
+  → Lakewood Municipal Court                           (2 files)
+  → Lawrence County Municipal Court                    (1 files)
+  → Licking County Municipal Court                     (1 files)
+  → Lucas County Court of Common Pleas                 (23 files)
+  → Marion County Court of Common Pleas                (2 files)
+  → Medina County Court of Common Pleas                (8 files)
+  → Miami County Court of Common Pleas                 (3 files)
+  → Montgomery County Court of Common Pleas            (1 files)
+  → Morrow County Municipal Court                      (1 files)
+  → Ohio Court of Claims                               (38 files)
+  → Ohio Court of Common Pleas                         (1 files)
+  → Putnam County Court of Common Pleas                (1 files)
+  → Supreme Court of Ohio                              (2 files)
+  → Tiffin Municipal Court                             (1 files)
+  → Trumbull County Court                              (2 files)
+  → Trumbull County Court of Common Pleas              (2 files)
+  → Upper Sandusky Municipal Court                     (1 files)
+  → Warren County Municipal Court                      (1 files)
+  → Wood County Court of Common Pleas                  (2 files)
+
+ohio-np:
+  → Allen County Court of Common Pleas                 (2 files)
+  → Ashland County Court of Common Pleas               (2 files)
+  → Ashtabula County Court of Common Pleas             (1 files)
+  → Butler County Court of Common Pleas                (4 files)
+  → Cincinnati Superior Court                          (168 files)
+  → Clark County Court of Common Pleas                 (2 files)
+  → Clark County Probate Court                         (26 files)
+  → Clarke County Court of Common Pleas                (1 files)
+  → Clermont County Court of Common Pleas              (1 files)
+  → Cleveland Police Court                             (1 files)
+  → Clinton County Court of Common Pleas               (6 files)
+  → Columbiana County Court of Common Pleas            (1 files)
+  → Columbus Police Court                              (2 files)
+  → Coshocton County Court of Common Pleas             (1 files)
+  → Crawford County Court of Common Pleas              (2 files)
+  → Cuyahoga County Court of Common Pleas              (42 files)
+  → Cuyahoga County Probate Court                      (1 files)
+  → Darke County Court of Common Pleas                 (1 files)
+  → Defiance County Court of Common Pleas              (1 files)
+  → Delaware County Court of Common Pleas              (2 files)
+  → Erie County Court of Common Pleas                  (1 files)
+  → Fairfield County Court of Common Pleas             (1 files)
+  → Fayette County Court of Common Pleas               (3 files)
+  → Franklin County Court of Common Pleas              (21 files)
+  → Fulton County Court of Common Pleas                (1 files)
+  → Geauga County Court of Common Pleas                (1 files)
+  → Greene County Court of Common Pleas                (3 files)
+  → Hamilton County Court of Common Pleas              (118 files)
+  → Hamilton County Court of Insolvency                (10 files)
+  → Hamilton County Probate Court                      (8 files)
+  → Hancock County Court of Common Pleas               (1 files)
+  → Harrison County Court of Common Pleas              (1 files)
+  → Highland County Court of Common Pleas              (3 files)
+  → Holmes County Court of Common Pleas                (1 files)
+  → Huron County Court of Common Pleas                 (7 files)
+  → Jackson County Court of Common Pleas               (1 files)
+  → Knox County Court of Common Pleas                  (3 files)
+  → Lake County Court of Common Pleas                  (3 files)
+  → Licking County Court of Common Pleas               (20 files)
+  → Licking County Probate Court                       (2 files)
+  → Lorain County Court of Common Pleas                (10 files)
+  → Lucas County Court of Common Pleas                 (27 files)
+  → Lucas County Probate Court                         (1 files)
+  → Madison County Court of Common Pleas               (1 files)
+  → Mahoning County Court of Common Pleas              (2 files)
+  → Medina County Court of Common Pleas                (2 files)
+  → Meigs County Court of Common Pleas                 (1 files)
+  → Miami County Court of Common Pleas                 (1 files)
+  → Montgomery County Court of Common Pleas            (9 files)
+  → Morrow County Court of Common Pleas                (1 files)
+  → Muskingum County Court of Common Pleas             (4 files)
+  → Ohio Circuit Court                                 (1 files)
+  → Ohio Court of Common Pleas                         (1 files)
+  → Ohio Court of Nisi Prius                           (1 files)
+  → Ottawa County Court of Common Pleas                (2 files)
+  → Paulding County Court of Common Pleas              (1 files)
+  → Perry County Court of Common Pleas                 (1 files)
+  → Pickaway County Court of Common Pleas              (2 files)
+  → Portage County Court of Common Pleas               (1 files)
+  → Preble County Court of Common Pleas                (1 files)
+  → Putnam County Court of Common Pleas                (1 files)
+  → Richland County Court of Common Pleas              (1 files)
+  → Ross County Court of Common Pleas                  (1 files)
+  → Sandusky County Court of Common Pleas              (2 files)
+  → Scioto County Court of Common Pleas                (1 files)
+  → Scioto County Probate Court                        (1 files)
+  → Seneca County Court of Common Pleas                (1 files)
+  → Shelby County Court of Common Pleas                (1 files)
+  → Stark County Court of Common Pleas                 (3 files)
+  → Summit County Court of Common Pleas                (11 files)
+  → Summit County Probate Court                        (1 files)
+  → Trumbull County Court of Common Pleas              (1 files)
+  → Van Wert County Court of Common Pleas              (1 files)
+  → Vinton County Court of Common Pleas                (2 files)
+  → Warren County Court of Common Pleas                (1 files)
+  → Williams County Court of Common Pleas              (1 files)
+  → Wood County Court of Common Pleas                  (1 files)
+
+ohio-np-ns:
+  → Akron Municipal Court                              (2 files)
+  → Allen County Court of Common Pleas                 (4 files)
+  → Ashland County Court of Common Pleas               (2 files)
+  → Ashtabula County Court of Common Pleas             (1 files)
+  → Auglaize County Probate Court                      (1 files)
+  → Brown County Court of Common Pleas                 (1 files)
+  → Butler County Court of Common Pleas                (2 files)
+  → Cincinnati Municipal Court                         (2 files)
+  → Cincinnati Superior Court                          (25 files)
+  → City of Columbus Municipal Court                   (1 files)
+  → Clark County Court of Common Pleas                 (8 files)
+  → Clermont County Court of Common Pleas              (1 files)
+  → Cleveland Municipal Court                          (4 files)
+  → Clinton County Court of Common Pleas               (2 files)
+  → Columbiana County Court of Common Pleas            (1 files)
+  → Columbus Municipal Court                           (3 files)
+  → Crawford County Court of Common Pleas              (5 files)
+  → Cuyahoga County Court of Common Pleas              (42 files)
+  → Cuyahoga County Probate Court                      (5 files)
+  → Darke County Court of Common Pleas                 (3 files)
+  → Dayton Municipal Court                             (3 files)
+  → Defiance County Court of Common Pleas              (2 files)
+  → Delaware County Court of Common Pleas              (1 files)
+  → East Liverpool Municipal Court                     (3 files)
+  → Erie County Court of Common Pleas                  (1 files)
+  → Fairfield County Court of Common Pleas             (1 files)
+  → Fayette County Court of Common Pleas               (2 files)
+  → Franklin County Court of Common Pleas              (59 files)
+  → Franklin County Probate Court                      (9 files)
+  → Fulton County Court of Common Pleas                (1 files)
+  → Galia County Court of Common Pleas                 (1 files)
+  → Greene County Court of Common Pleas                (2 files)
+  → Guernsey County Court of Common Pleas              (2 files)
+  → Hamilton County Court of Common Pleas              (213 files)
+  → Hamilton County Court of Insolvency                (5 files)
+  → Hamilton County Probate Court                      (1 files)
+  → Hancock County Court of Common Pleas               (4 files)
+  → Hardin County Court of Common Pleas                (2 files)
+  → Henry County Court of Common Pleas                 (1 files)
+  → Hocking County Court of Common Pleas               (1 files)
+  → Holmes County Court of Common Pleas                (3 files)
+  → Knox County Court of Common Pleas                  (2 files)
+  → Lake County Court of Common Pleas                  (1 files)
+  → Lawrence County Court of Common Pleas              (1 files)
+  → Licking County Court of Common Pleas               (25 files)
+  → Logan County Court of Common Pleas                 (1 files)
+  → Lorain County Court of Common Pleas                (3 files)
+  → Lucas County Court of Common Pleas                 (7 files)
+  → Madison County Probate Court                       (1 files)
+  → Mahoning County Court of Common Pleas              (6 files)
+  → Medina County Court of Common Pleas                (2 files)
+  → Mercer County Court of Common Pleas                (1 files)
+  → Montgomery County Court of Common Pleas            (58 files)
+  → Montgomery County Probate Court                    (7 files)
+  → Morgan County Court of Common Pleas                (1 files)
+  → Muskingum County Court of Common Pleas             (2 files)
+  → Ottawa County Court of Common Pleas                (2 files)
+  → Paulding County Court of Common Pleas              (1 files)
+  → Pickaway County Court of Common Pleas              (3 files)
+  → Putnam County Court of Common Pleas                (2 files)
+  → Richland County Court of Common Pleas              (5 files)
+  → Ross County Court of Common Pleas                  (2 files)
+  → Sandusky County Court of Common Pleas              (1 files)
+  → Seneca County Probate Court                        (1 files)
+  → Stark County Court of Common Pleas                 (9 files)
+  → Summit County Court of Common Pleas                (10 files)
+  → Summit County Probate Court                        (2 files)
+  → Toledo Municipal Court                             (1 files)
+  → Trumbull County Court of Common Pleas              (11 files)
+  → Tuscarawas County Court of Common Pleas            (4 files)
+  → Tuscarawas County Juvenile Court                   (1 files)
+  → Tuscarawas County Probate Court                    (11 files)
+  → Van Wert County Court of Common Pleas              (1 files)
+  → Warren County Court of Common Pleas                (1 files)
+  → Wood County Court of Common Pleas                  (7 files)
+  → Wyandot County Court of Common Pleas               (1 files)
+
+ohio-st:
+  → Supreme Court of Ohio                              (2,222 files)
+
+ohio-st-2d:
+  → Supreme Court of Ohio                              (495 files)
+
+ohio-st-3d:
+  → Supreme Court of Ohio                              (5,040 files)
+
+====================================================================================================
+COURTS WITH YEAR RANGES
+====================================================================================================
+Adams County Circuit Court                         | 1900-1900 | 1 files
+Adams County Court of Common Pleas                 | 1973-1973 | 1 files
+Akron Municipal Court                              | 1923-1988 | 16 files
+Allen Circuit Court                                | 1891-1904 | 6 files
+Allen County Circuit Court                         | 1900-1901 | 4 files
+Allen County Court                                 | 1965-1965 | 1 files
+Allen County Court of Common Pleas                 | 1897-1972 | 10 files
+Anderson's Unreported Ohio Appellate Cases         | 1990-1990 | 20 files
+Arizona Supreme Court                              | 1961-1961 | 1 files
+Ashland Circuit Court                              | 1899-1899 | 1 files
+Ashland County Court of Common Pleas               | 1900-1915 | 4 files
+Ashtabula Circuit Court                            | 1893-1910 | 6 files
+Ashtabula County Circuit Court                     | 1900-1901 | 4 files
+Ashtabula County Court of Common Pleas             | 1897-1973 | 6 files
+Ashtabula Municipal Court                          | 1970-1971 | 2 files
+Athens County Court of Common Pleas                | 1961-1964 | 2 files
+Athens County Municipal Court                      | 2008-2012 | 5 files
+Auglaize Circuit Court                             | 1897-1897 | 1 files
+Auglaize County Probate Court                      | 1930-1930 | 1 files
+Avon Lake Municipal Court                          | 1998-1998 | 1 files
+Bedford Municipal Court                            | 1964-1964 | 2 files
+Bellefontaine Municipal Court                      | 1963-1966 | 2 files
+Belmont Circuit Court                              | 1899-1899 | 1 files
+Belmont County Circuit Court                       | 1900-1900 | 1 files
+Belmont County Court                               | 1916-1982 | 3 files
+Belmont County Court of Common Pleas               | 1966-1967 | 2 files
+Boss County Court of Common Pleas                  | 1975-1975 | 1 files
+Brown County Circuit Court                         | 1900-1900 | 1 files
+Brown County Court of Common Pleas                 | 1917-1917 | 1 files
+Butler Circuit Court                               | 1891-1900 | 12 files
+Butler County Circuit Court                        | 1898-1901 | 4 files
+Butler County Court                                | 1916-1916 | 1 files
+Butler County Court of Appeals                     | 1914-1914 | 2 files
+Butler County Court of Common Pleas                | 1895-2008 | 12 files
+Butler County Probate Court                        | 1963-1963 | 1 files
+Champaign Circuit Court                            | 1887-1915 | 3 files
+Champaign County Circuit Court                     | 1899-1899 | 1 files
+Champaign County Probate Court                     | 1963-1963 | 1 files
+Cincinnati Municipal Court                         | 1929-1963 | 4 files
+Cincinnati Superior Court                          | 1881-1925 | 203 files
+City of Columbus Municipal Court                   | 1918-1918 | 1 files
+Clark Circuit Court                                | 1888-1900 | 4 files
+Clark County Circuit Court                         | 1898-1898 | 1 files
+Clark County Court                                 | 1915-1915 | 1 files
+Clark County Court of Common Pleas                 | 1901-1970 | 14 files
+Clark County Probate Court                         | 1892-1958 | 27 files
+Clarke County Court of Common Pleas                | 1901-1901 | 1 files
+Clermont Circuit Court                             | 1885-1906 | 7 files
+Clermont County Circuit Court                      | 1906-1906 | 1 files
+Clermont County Court                              | 1965-1965 | 3 files
+Clermont County Court of Common Pleas              | 1899-2011 | 31 files
+Clermont County Municipal Court                    | 2010-2010 | 1 files
+Cleveland County Municipal Court                   | 2003-2003 | 1 files
+Cleveland Heights Municipal Court                  | 1972-1980 | 3 files
+Cleveland Municipal Court                          | 1933-2011 | 12 files
+Cleveland Police Court                             | 1901-1901 | 1 files
+Clinton Circuit Court                              | 1890-1899 | 3 files
+Clinton County Circuit Court                       | 1901-1901 | 1 files
+Clinton County Court of Appeals                    | 1913-1914 | 2 files
+Clinton County Court of Common Pleas               | 1895-1967 | 9 files
+Columbiana Circuit Court                           | 1899-1899 | 1 files
+Columbiana County Circuit Court                    | 1899-1912 | 4 files
+Columbiana County Court                            | 1964-1965 | 3 files
+Columbiana County Court of Common Pleas            | 1899-1971 | 6 files
+Columbiana County Probate Court                    | 1959-1964 | 4 files
+Columbus Municipal Court                           | 1930-1965 | 5 files
+Columbus Police Court                              | 1900-1900 | 2 files
+Coshocton County Circuit Court                     | 1911-1911 | 1 files
+Coshocton County Court                             | 1916-1916 | 1 files
+Coshocton County Court of Common Pleas             | 1907-1907 | 1 files
+Crawford Circuit Court                             | 1893-1899 | 2 files
+Crawford County Circuit Court                      | 1900-1900 | 1 files
+Crawford County Court of Common Pleas              | 1898-1929 | 7 files
+Crawford County Municipal Court                    | 1979-1979 | 1 files
+Cuyahoga Circuit Court                             | 1885-1921 | 492 files
+Cuyahoga County Circuit Court                      | 1891-1913 | 268 files
+Cuyahoga County Common Pleas Court                 | 1974-1974 | 3 files
+Cuyahoga County Court                              | 1913-1965 | 33 files
+Cuyahoga County Court of Common Pleas              | 1888-2002 | 154 files
+Cuyahoga County Juvenile Court                     | 1963-1969 | 3 files
+Cuyahoga County Municipal Court                    | 1963-1963 | 2 files
+Cuyahoga County Probate Court                      | 1895-1969 | 25 files
+Darke Circuit Court                                | 1898-1899 | 2 files
+Darke County Court of Common Pleas                 | 1901-1919 | 4 files
+Dayton City Municipal Court                        | 1927-1927 | 1 files
+Dayton County Municipal Court                      | 1994-1994 | 1 files
+Dayton Municipal Court                             | 1923-1978 | 6 files
+Defiance Circuit Court                             | 1887-1898 | 6 files
+Defiance County Court of Common Pleas              | 1897-1922 | 3 files
+Delaware Circuit Court                             | 1892-1903 | 3 files
+Delaware County Court of Common Pleas              | 1897-2003 | 5 files
+East Liverpool Municipal Court                     | 1932-1933 | 3 files
+Erie Circuit Court                                 | 1894-1915 | 5 files
+Erie County Circuit Court                          | 1912-1912 | 1 files
+Erie County Court                                  | 1965-1965 | 2 files
+Erie County Court of Common Pleas                  | 1908-2009 | 4 files
+Fairfield Circuit Court                            | 1895-1908 | 2 files
+Fairfield County Circuit Court                     | 1895-1908 | 3 files
+Fairfield County Court                             | 1915-1916 | 2 files
+Fairfield County Court of Common Pleas             | 1906-1968 | 3 files
+Fayette Circuit Court                              | 1895-1900 | 2 files
+Fayette County Circuit Court                       | 1895-1895 | 1 files
+Fayette County Court of Common Pleas               | 1891-1962 | 12 files
+Findlay Municipal Court                            | 1956-1956 | 1 files
+Fostoria Municipal Court                           | 1975-1975 | 1 files
+Franklin Circuit Court                             | 1885-1911 | 19 files
+Franklin County Circuit Court                      | 1893-1912 | 18 files
+Franklin County Court                              | 1916-1965 | 37 files
+Franklin County Court of Common Pleas              | 1895-2012 | 127 files
+Franklin County Municipal Court                    | 1972-2012 | 16 files
+Franklin County Probate Court                      | 1907-1998 | 12 files
+Fulton Circuit Court                               | 1898-1899 | 2 files
+Fulton County Court of Common Pleas                | 1901-1977 | 5 files
+Fulton County Probate Court                        | 1962-1962 | 1 files
+Galia County Court of Common Pleas                 | 1929-1929 | 1 files
+Geauga Circuit Court                               | 1896-1896 | 1 files
+Geauga County Circuit Court                        | 1901-1901 | 1 files
+Geauga County Court of Common Pleas                | 1896-1998 | 2 files
+Greene Circuit Court                               | 1887-1892 | 2 files
+Greene County Circuit Court                        | 1893-1893 | 1 files
+Greene County Court of Common Pleas                | 1897-2008 | 7 files
+Guernsey Circuit Court                             | 1892-1892 | 1 files
+Guernsey County Circuit Court                      | 1892-1911 | 2 files
+Guernsey County Court of Common Pleas              | 1922-1934 | 2 files
+Hamilton Circuit Court                             | 1885-1916 | 248 files
+Hamilton County Circuit Court                      | 1892-1913 | 107 files
+Hamilton County Court                              | 1914-1965 | 69 files
+Hamilton County Court of Appeals                   | 1913-1914 | 6 files
+Hamilton County Court of Common Pleas              | 1882-2011 | 376 files
+Hamilton County Court of Insolvency                | 1887-1918 | 15 files
+Hamilton County Municipal Court                    | 1968-2005 | 14 files
+Hamilton County Probate Court                      | 1894-1969 | 18 files
+Hancock Circuit Court                              | 1893-1900 | 13 files
+Hancock County Circuit Court                       | 1896-1900 | 7 files
+Hancock County Court                               | 1964-1964 | 1 files
+Hancock County Court of Common Pleas               | 1908-1924 | 5 files
+Hardin Circuit Court                               | 1897-1899 | 2 files
+Hardin County Circuit Court                        | 1899-1899 | 1 files
+Hardin County Court of Common Pleas                | 1915-1932 | 2 files
+Harrison Circuit Court                             | 1898-1899 | 2 files
+Harrison County Circuit Court                      | 1900-1900 | 1 files
+Harrison County Court                              | 1974-1974 | 1 files
+Harrison County Court of Common Pleas              | 1900-1900 | 1 files
+Henry County Court                                 | 1916-1916 | 1 files
+Henry County Court of Common Pleas                 | 1915-1915 | 1 files
+Highland County Court of Common Pleas              | 1895-1979 | 6 files
+Hocking County Court                               | 1964-1965 | 4 files
+Hocking County Court of Common Pleas               | 1931-1931 | 1 files
+Hocking County Municipal Court                     | 2010-2010 | 1 files
+Holmes Circuit Court                               | 1897-1897 | 1 files
+Holmes County Court                                | 1915-1915 | 1 files
+Holmes County Court of Common Pleas                | 1899-1933 | 4 files
+Huron Circuit Court                                | 1894-1899 | 8 files
+Huron County Circuit Court                         | 1894-1911 | 3 files
+Huron County Court of Appeals                      | 1913-1913 | 1 files
+Huron County Court of Common Pleas                 | 1894-1908 | 7 files
+Huron County Juvenile Court                        | 1961-1961 | 1 files
+Huron County Probate Court                         | 1959-1961 | 2 files
+Jackson County Circuit Court                       | 1900-1900 | 1 files
+Jackson County Court                               | 1964-1964 | 1 files
+Jackson County Court of Common Pleas               | 1908-1998 | 3 files
+Jefferson Circuit Court                            | 1894-1908 | 6 files
+Jefferson County Court                             | 1916-1916 | 1 files
+Jefferson County Court of Common Pleas             | 1941-1961 | 3 files
+Kettering Municipal Court                          | 1971-1974 | 3 files
+Knox County Circuit Court                          | 1899-1906 | 2 files
+Knox County Court of Appeals                       | 1916-1916 | 1 files
+Knox County Court of Common Pleas                  | 1897-1911 | 5 files
+Lake County Circuit Court                          | 1885-1900 | 7 files
+Lake County Court                                  | 1964-1965 | 3 files
+Lake County Court of Common Pleas                  | 1891-2002 | 14 files
+Lake County Probate Court                          | 1963-1968 | 2 files
+Lakewood Municipal Court                           | 1938-2010 | 3 files
+Lawrence County Court                              | 1965-1965 | 2 files
+Lawrence County Court of Common Pleas              | 1917-1967 | 3 files
+Lawrence County Municipal Court                    | 2008-2008 | 1 files
+Licking Circuit Court                              | 1894-1911 | 17 files
+Licking County Circuit Court                       | 1898-1905 | 7 files
+Licking County Court of Appeals                    | 1914-1916 | 7 files
+Licking County Court of Common Pleas               | 1896-1980 | 53 files
+Licking County Municipal Court                     | 2004-2004 | 1 files
+Licking County Probate Court                       | 1900-1900 | 2 files
+Logan Circuit Court                                | 1887-1899 | 5 files
+Logan County Circuit Court                         | 1895-1895 | 1 files
+Logan County Court                                 | 1965-1965 | 2 files
+Logan County Court of Common Pleas                 | 1905-1905 | 1 files
+Lorain Circuit Court                               | 1894-1913 | 25 files
+Lorain County Circuit Court                        | 1900-1912 | 11 files
+Lorain County Court of Common Pleas                | 1894-1971 | 14 files
+Lucas Circuit Court                                | 1889-1913 | 138 files
+Lucas County Circuit Court                         | 1892-1912 | 53 files
+Lucas County Court                                 | 1914-1965 | 18 files
+Lucas County Court of Appeals                      | 1913-1914 | 2 files
+Lucas County Court of Common Pleas                 | 1894-2011 | 62 files
+Lucas County District Court                        | 1964-1964 | 1 files
+Lucas County Municipal Court                       | 1960-1964 | 2 files
+Lucas County Probate Court                         | 1894-1894 | 1 files
+Madison Circuit Court                              | 1908-1908 | 1 files
+Madison County Court of Common Pleas               | 1901-1964 | 7 files
+Madison County Probate Court                       | 1934-1934 | 1 files
+Mahoning Circuit Court                             | 1895-1911 | 4 files
+Mahoning County Circuit Court                      | 1900-1900 | 1 files
+Mahoning County Court                              | 1964-1965 | 4 files
+Mahoning County Court of Appeals                   | 1913-1913 | 1 files
+Mahoning County Court of Common Pleas              | 1894-1976 | 14 files
+Marion Circuit Court                               | 1899-1899 | 1 files
+Marion County Court                                | 1964-1964 | 2 files
+Marion County Court of Common Pleas                | 1962-2002 | 5 files
+Marion County Juvenile Court                       | 1961-1961 | 1 files
+Marion County Probate Court                        | 1961-1961 | 1 files
+Medina Circuit Court                               | 1907-1912 | 5 files
+Medina County Circuit Court                        | 1908-1912 | 5 files
+Medina County Court of Common Pleas                | 1899-2010 | 13 files
+Meigs Circuit Court                                | 1889-1889 | 1 files
+Meigs County Circuit Court                         | 1888-1888 | 1 files
+Meigs County Court of Common Pleas                 | 1895-1964 | 7 files
+Mercer County Court                                | 1965-1965 | 2 files
+Mercer County Court of Common Pleas                | 1916-1969 | 2 files
+Miami Circuit Court                                | 1895-1895 | 1 files
+Miami County Circuit Court                         | 1905-1905 | 1 files
+Miami County Court of Common Pleas                 | 1894-1998 | 7 files
+Miamisburg Municipal Court                         | 1978-1978 | 1 files
+Monroe County Court                                | 1965-1965 | 1 files
+Monroe County Court of Common Pleas                | 1963-1964 | 2 files
+Montgomery Circuit Court                           | 1889-1916 | 5 files
+Montgomery County Court                            | 1964-1965 | 10 files
+Montgomery County Court of Common Pleas            | 1897-2008 | 98 files
+Montgomery County Probate Court                    | 1920-1964 | 17 files
+Morgan County Court of Common Pleas                | 1930-1930 | 1 files
+Morrow Circuit Court                               | 1899-1899 | 1 files
+Morrow County Court                                | 1915-1916 | 2 files
+Morrow County Court of Common Pleas                | 1900-1900 | 1 files
+Morrow County Municipal Court                      | 2010-2010 | 1 files
+Muskingum Circuit Court                            | 1900-1900 | 1 files
+Muskingum County Circuit Court                     | 1900-1900 | 2 files
+Muskingum County Court                             | 1915-1916 | 4 files
+Muskingum County Court of Common Pleas             | 1897-1963 | 9 files
+Oberlin Municipal Court                            | 1963-1963 | 1 files
+Ohio Board of Tax Appeals                          | 1944-1968 | 8 files
+Ohio Circuit Court                                 | 1885-1912 | 943 files
+Ohio Civil Rights Commission                       | 1962-1962 | 1 files
+Ohio Court of Appeals                              | 1912-2012 | 4,731 files
+Ohio Court of Claims                               | 1975-2011 | 42 files
+Ohio Court of Common Pleas                         | 1897-2003 | 2 files
+Ohio Court of Nisi Prius                           | 1901-1901 | 1 files
+Ohio Public Utilities Commission                   | 1958-1967 | 5 files
+Ohio State Racing Commission                       | 1963-1963 | 1 files
+Ottawa Circuit Court                               | 1895-1897 | 6 files
+Ottawa County Circuit Court                        | 1895-1895 | 1 files
+Ottawa County Court                                | 1916-1916 | 1 files
+Ottawa County Court of Common Pleas                | 1897-1934 | 4 files
+Paulding Circuit Court                             | 1886-1898 | 3 files
+Paulding County Court                              | 1964-1964 | 1 files
+Paulding County Court of Common Pleas              | 1906-1976 | 10 files
+Perry Circuit Court                                | 1899-1899 | 1 files
+Perry County Circuit Court                         | 1903-1903 | 1 files
+Perry County Court                                 | 1914-1914 | 1 files
+Perry County Court of Common Pleas                 | 1908-1908 | 1 files
+Pickaway Circuit Court                             | 1898-1899 | 4 files
+Pickaway County Circuit Court                      | 1900-1901 | 3 files
+Pickaway County Court                              | 1964-1964 | 1 files
+Pickaway County Court of Common Pleas              | 1897-1972 | 9 files
+Pike Circuit Court                                 | 1894-1894 | 1 files
+Pike County Court                                  | 1965-1965 | 1 files
+Portage Circuit Court                              | 1894-1894 | 1 files
+Portage County Court of Common Pleas               | 1901-1901 | 1 files
+Portage County Probate Court                       | 1962-1962 | 1 files
+Portsmouth Municipal Court                         | 1962-1962 | 1 files
+Preble County Court of Common Pleas                | 1897-1970 | 4 files
+Preble County Juvenile Court                       | 1962-1962 | 1 files
+Preble County Probate Court                        | 1959-1962 | 3 files
+Public Utilities Commission                        | 1959-1959 | 1 files
+Putnam Circuit Court                               | 1895-1905 | 4 files
+Putnam County Circuit Court                        | 1900-1900 | 1 files
+Putnam County Court of Common Pleas                | 1897-2002 | 4 files
+Richland Circuit Court                             | 1897-1908 | 5 files
+Richland County Circuit Court                      | 1903-1913 | 5 files
+Richland County Court                              | 1916-1964 | 4 files
+Richland County Court of Common Pleas              | 1900-1974 | 11 files
+Ross Circuit Court                                 | 1897-1897 | 1 files
+Ross County Circuit Court                          | 1900-1900 | 1 files
+Ross County Court of Common Pleas                  | 1900-1980 | 4 files
+Sandusky Circuit Court                             | 1885-1912 | 7 files
+Sandusky County Circuit Court                      | 1907-1912 | 2 files
+Sandusky County Court of Common Pleas              | 1897-1963 | 5 files
+Scioto County Circuit Court                        | 1897-1906 | 2 files
+Scioto County Court                                | 1965-1965 | 5 files
+Scioto County Court of Common Pleas                | 1900-1977 | 15 files
+Scioto County Probate Court                        | 1901-1901 | 1 files
+Seneca Circuit Court                               | 1896-1899 | 4 files
+Seneca County Circuit Court                        | 1899-1900 | 4 files
+Seneca County Court of Common Pleas                | 1894-1972 | 2 files
+Seneca County Probate Court                        | 1934-1934 | 1 files
+Shaker Heights Municipal Court                     | 1968-1975 | 6 files
+Shelby Circuit Court                               | 1885-1891 | 2 files
+Shelby County Court of Common Pleas                | 1908-1908 | 1 files
+Shelby County Probate Court                        | 1960-1960 | 1 files
+South Carolina Supreme Court                       | 1962-1962 | 1 files
+South Euclid Municipal Court                       | 1963-1974 | 6 files
+Springfield Municipal Court                        | 1960-1960 | 1 files
+Stark Circuit Court                                | 1895-1910 | 12 files
+Stark County Circuit Court                         | 1895-1913 | 4 files
+Stark County Court                                 | 1915-1965 | 19 files
+Stark County Court of Appeals                      | 1913-1913 | 1 files
+Stark County Court of Common Pleas                 | 1893-1974 | 20 files
+Summit Circuit Court                               | 1896-1912 | 43 files
+Summit County Circuit Court                        | 1900-1912 | 31 files
+Summit County Court                                | 1964-1965 | 5 files
+Summit County Court of Common Pleas                | 1891-1969 | 24 files
+Summit County Probate Court                        | 1897-1968 | 4 files
+Supreme Court of Ohio                              | 1823-2018 | 12,382 files
+Supreme Court of the United States                 | 1922-1966 | 7 files
+Tiffin Municipal Court                             | 1988-1988 | 1 files
+Toledo Municipal Court                             | 1930-1978 | 6 files
+Trumbull County Court                              | 1964-2003 | 3 files
+Trumbull County Court of Common Pleas              | 1890-2011 | 16 files
+Tuscarawas Circuit Court                           | 1898-1898 | 1 files
+Tuscarawas County Circuit Court                    | 1900-1900 | 1 files
+Tuscarawas County Court of Common Pleas            | 1925-1970 | 17 files
+Tuscarawas County Juvenile Court                   | 1926-1926 | 1 files
+Tuscarawas County Probate Court                    | 1925-1934 | 11 files
+Union County Circuit Court                         | 1900-1900 | 1 files
+United States Board of Tax Appeals                 | 1973-1973 | 1 files
+United States Court of Appeals for the Second Circuit | 1923-1923 | 1 files
+United States Court of Appeals for the Sixth Circuit | 1903-1971 | 45 files
+United States Court of Appeals for the Third Circuit | 1962-1962 | 1 files
+United States District Court for the District of New Hampshire | 1923-1923 | 1 files
+United States District Court for the District of Ohio | 1923-1923 | 1 files
+United States District Court for the District of Oregon | 1923-1923 | 1 files
+United States District Court for the Eastern District of Kentucky | 1970-1970 | 1 files
+United States District Court for the Northern District of Ohio | 1903-1975 | 45 files
+United States District Court for the Southern District of Ohio | 1922-1974 | 28 files
+United States District Court for the Western District of Virginia | 1958-1958 | 1 files
+Upper Sandusky Municipal Court                     | 2012-2012 | 1 files
+Van Wert Circuit Court                             | 1894-1894 | 1 files
+Van Wert County Court of Common Pleas              | 1908-1978 | 5 files
+Vinton County Circuit Court                        | 1899-1899 | 1 files
+Vinton County Court of Common Pleas                | 1901-1939 | 4 files
+Warren Circuit Court                               | 1896-1897 | 3 files
+Warren County Circuit Court                        | 1900-1901 | 2 files
+Warren County Court of Common Pleas                | 1897-1930 | 2 files
+Warren County Municipal Court                      | 2002-2002 | 1 files
+Wayne County Circuit Court                         | 1900-1900 | 2 files
+Wayne County Court                                 | 1916-1916 | 1 files
+Wayne County Court of Appeals                      | 1913-1913 | 1 files
+Wayne County Court of Common Pleas                 | 1974-1974 | 1 files
+Williams Circuit Court                             | 1898-1898 | 1 files
+Williams County Circuit Court                      | 1911-1911 | 1 files
+Williams County Court of Common Pleas              | 1906-1940 | 2 files
+Wood Circuit Court                                 | 1890-1912 | 20 files
+Wood County Circuit Court                          | 1894-1912 | 5 files
+Wood County Court                                  | 1912-1916 | 14 files
+Wood County Court of Common Pleas                  | 1901-2010 | 11 files
+Wyandot Circuit Court                              | 1895-1897 | 2 files
+Wyandot County Court                               | 1915-1915 | 1 files
+Wyandot County Court of Common Pleas               | 1922-1922 | 1 files
+
+====================================================================================================
+YEAR DISTRIBUTION (Top 20)
+====================================================================================================
+1823: 2 files
+1824: 7 files
+1825: 5 files
+1826: 6 files
+1827: 6 files
+1828: 4 files
+1829: 4 files
+1831: 15 files
+1832: 140 files
+1833: 198 files
+1834: 188 files
+1835: 9 files
+1836: 17 files
+1837: 8 files
+1838: 18 files
+1839: 10 files
+1840: 21 files
+1841: 28 files
+1842: 19 files
+1843: 26 files
+
+====================================================================================================
+ANALYSIS COMPLETE
+====================================================================================================
