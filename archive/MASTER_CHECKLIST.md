@@ -102,25 +102,25 @@
   ```
   dist/
   ├── ohio_revised/
-  │   ├── sections.lmdb
+  │   ├── primary.lmdb          # Statutory sections
   │   ├── citations.lmdb
   │   ├── reverse_citations.lmdb
   │   ├── chains.lmdb
   │   └── metadata.lmdb
   ├── ohio_admin/
-  │   ├── sections.lmdb
+  │   ├── primary.lmdb          # Administrative rules
   │   ├── citations.lmdb
   │   ├── reverse_citations.lmdb
   │   ├── chains.lmdb
   │   └── metadata.lmdb
   ├── ohio_constitution/
-  │   ├── sections.lmdb
+  │   ├── primary.lmdb          # Constitutional articles
   │   ├── citations.lmdb
   │   ├── reverse_citations.lmdb
   │   ├── chains.lmdb
   │   └── metadata.lmdb
-  ├── ohio_case_law/
-  │   ├── sections.lmdb
+  ├── ohio_caselaw/
+  │   ├── primary.lmdb          # Court opinions
   │   ├── citations.lmdb
   │   ├── reverse_citations.lmdb
   │   ├── chains.lmdb

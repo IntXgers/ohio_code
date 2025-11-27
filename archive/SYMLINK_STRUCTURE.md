@@ -2,12 +2,103 @@
 
 ## Overview
 
-This document shows the complete directory structure for the **ohio_code** repository (data pipeline) and how your app repository should symlink to the enriched LMDB databases.
+This document shows the complete directory structure for the **ohio_code** repository (data pipeline) and how your **ohio-legal-ai.io** application repository uses schema generation and symlinks to ensure zero drift.
 
-**Architecture**:
-- `ohio_code/`: Data pipeline repository (scraping, enrichment, LMDB building)
-- `ohio_code/dist/`: Final output directory containing all enriched LMDB databases
-- Your app: Symlinks to `dist/` and includes query logic (knowledge service + Temporal workflows)
+**Architecture Flow**:
+1. **Application Repo** (`ohio-legal-ai.io`): Pydantic models are source of truth
+2. **Schema Generator**: Generates TypedDicts from Pydantic models → data pipeline repo
+3. **Data Pipeline** (`ohio_code`): Uses generated schemas to build LMDB databases
+4. **LMDB Output**: Builds to `ohio_code/dist/`
+5. **Symlinks**: Application symlinks to `dist/` for read-only access
+6. **Data Service**: Reads LMDB, maps back to Pydantic models (guaranteed match)
+
+**Key Principle**:
+- Application models → Generate schemas → Build LMDB → Symlink → Read back to models
+- **Zero manual syncing** - schemas auto-generated from source of truth
+
+---
+
+## Schema Generation Flow (Zero Drift Architecture)
+
+### Step 1: Application Repo - Pydantic Models (Source of Truth)
+```
+ohio-legal-ai.io/packages/models/src/models/
+├── citations.py          # CitationNode, CitationEdge, CitationGraph
+├── legal_authorities.py  # OhioCaseLaw, TreatmentEvent, etc.
+├── lmdb_data.py          # OhioSection, CitationData, etc.
+└── _metadata.py          # Field metadata helpers
+```
+
+### Step 2: Generate TypedDict Schemas
+```bash
+# In ohio-legal-ai.io repo
+cd packages/models/src/models
+python 00_generate_all.py
+
+# This runs all generators including:
+# - 09_lmdb_schema_generator.py → Generates TypedDicts for LMDB builders
+```
+
+### Step 3: Schemas Output to Data Pipeline Repo
+```
+ohio_code/ohio_caselaw/src/ohio_caselaw/lmdb/
+└── generated_schemas.py    # ← Auto-generated TypedDicts
+    ├── CaseNodeSchema      # From CitationNode
+    ├── EdgeSchema          # From CitationEdge
+    ├── GraphSchema         # From CitationGraph
+    ├── CaseLawSchema       # From OhioCaseLaw
+    └── ...
+```
+
+### Step 4: LMDB Builder Uses Generated Schemas
+```python
+# ohio_code/ohio_caselaw/src/ohio_caselaw/lmdb/build_comprehensive_lmdb.py
+from generated_schemas import CaseNodeSchema, EdgeSchema, GraphSchema
+
+class ComprehensiveCaseLawLMDBBuilder:
+    def build_cases_database(self):
+        # Use generated schema to ensure correct structure
+        case_data: CaseNodeSchema = {
+            'id': case_id,
+            'label': case_name,
+            'type': 'case_law',
+            'jurisdiction': 'ohio_state',
+            'corpus': 'ohio_caselaw',
+            # ... all fields match Pydantic model exactly
+        }
+```
+
+### Step 5: LMDB Output
+```
+ohio_code/dist/ohio_caselaw/
+├── primary.lmdb             # Built using CaseLawSchema (cases for case law corpus)
+├── citations.lmdb           # Built using EdgeSchema
+├── reverse_citations.lmdb
+├── chains.lmdb              # Built using GraphSchema
+└── metadata.lmdb
+```
+
+### Step 6: Application Symlinks to LMDB
+```bash
+# In ohio-legal-ai.io repo
+ln -s /path/to/ohio_code/dist/ohio_caselaw services/data/lmdb/ohio_caselaw
+```
+
+### Step 7: Data Service Reads LMDB → Maps to Pydantic
+```python
+# ohio-legal-ai.io/services/data/lmdb_store.py
+from models.citations import CitationNode, CitationEdge, CitationGraph
+
+class LMDBStore:
+    def get_case(self, case_id: str) -> CitationNode:
+        # Read from LMDB
+        raw_data = self._read_from_lmdb(case_id)
+
+        # Map to Pydantic model (guaranteed to match because schemas were generated from it)
+        return CitationNode(**raw_data)
+```
+
+**Result**: Zero drift - LMDB structure always matches Pydantic models
 
 ---
 
@@ -17,43 +108,43 @@ This document shows the complete directory structure for the **ohio_code** repos
 ohio_code/
 ├── dist/                                    # ← Final output (35 LMDB databases)
 │   ├── ohio_revised/
-│   │   ├── sections.lmdb
+│   │   ├── primary.lmdb                     # Statutory sections
 │   │   ├── citations.lmdb
 │   │   ├── reverse_citations.lmdb
 │   │   ├── chains.lmdb
 │   │   └── metadata.lmdb
 │   ├── ohio_administration/
-│   │   ├── sections.lmdb
+│   │   ├── primary.lmdb                     # Administrative rules
 │   │   ├── citations.lmdb
 │   │   ├── reverse_citations.lmdb
 │   │   ├── chains.lmdb
 │   │   └── metadata.lmdb
 │   ├── ohio_constitution/
-│   │   ├── sections.lmdb
+│   │   ├── primary.lmdb                     # Constitutional articles
 │   │   ├── citations.lmdb
 │   │   ├── reverse_citations.lmdb
 │   │   ├── chains.lmdb
 │   │   └── metadata.lmdb
-│   ├── ohio_case_law/
-│   │   ├── sections.lmdb
+│   ├── ohio_caselaw/
+│   │   ├── primary.lmdb                     # Court opinions
 │   │   ├── citations.lmdb
 │   │   ├── reverse_citations.lmdb
 │   │   ├── chains.lmdb
 │   │   └── metadata.lmdb
 │   ├── us_code/
-│   │   ├── sections.lmdb
+│   │   ├── primary.lmdb                     # Federal statutes
 │   │   ├── citations.lmdb
 │   │   ├── reverse_citations.lmdb
 │   │   ├── chains.lmdb
 │   │   └── metadata.lmdb
 │   ├── scotus/
-│   │   ├── sections.lmdb
+│   │   ├── primary.lmdb                     # SCOTUS opinions
 │   │   ├── citations.lmdb
 │   │   ├── reverse_citations.lmdb
 │   │   ├── chains.lmdb
 │   │   └── metadata.lmdb
 │   └── sixth_circuit/
-│       ├── sections.lmdb
+│       ├── primary.lmdb                     # 6th Circuit opinions
 │       ├── citations.lmdb
 │       ├── reverse_citations.lmdb
 │       ├── chains.lmdb
@@ -239,7 +330,16 @@ cp -r ../../../../sixth_circuit/data/enriched_output/comprehensive_lmdb/* ../../
 
 **7 corpuses × 5 databases each = 35 LMDB databases**
 
-| Corpus | sections.lmdb | citations.lmdb | reverse_citations.lmdb | chains.lmdb | metadata.lmdb |
+All corpuses use the same 5 LMDB database names for consistency, but each `primary.lmdb` contains different entity types based on the corpus:
+- **Ohio Revised**: Statutory sections
+- **Ohio Admin**: Administrative rules
+- **Ohio Constitution**: Constitutional articles
+- **Ohio Case Law**: Court opinions
+- **US Code**: Federal statutes
+- **SCOTUS**: Supreme Court opinions
+- **Sixth Circuit**: Circuit court opinions
+
+| Corpus | primary.lmdb | citations.lmdb | reverse_citations.lmdb | chains.lmdb | metadata.lmdb |
 |--------|--------------|----------------|------------------------|-------------|---------------|
 | Ohio Revised | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Ohio Admin | ⏳ | ⏳ | ⏳ | ⏳ | ⏳ |
@@ -273,7 +373,7 @@ class LMDBStore:
 
     def _open_corpus(self, corpus_path: Path):
         return {
-            'sections': lmdb.open(str(corpus_path / 'sections.lmdb'), readonly=True),
+            'primary': lmdb.open(str(corpus_path / 'primary.lmdb'), readonly=True),
             'citations': lmdb.open(str(corpus_path / 'citations.lmdb'), readonly=True),
             'reverse_citations': lmdb.open(str(corpus_path / 'reverse_citations.lmdb'), readonly=True),
             'chains': lmdb.open(str(corpus_path / 'chains.lmdb'), readonly=True),
@@ -354,16 +454,16 @@ async def get_corpus_info(corpus: str):
 ```bash
 # Check symlinks work
 cd your_app/knowledge_service/lmdb_data
-ls -la ohio_revised/sections.lmdb  # Should show symlink and file size
+ls -la ohio_revised/primary.lmdb  # Should show symlink and file size
 
 # Test LMDB access from Python
 python -c "
 import lmdb
-env = lmdb.open('lmdb_data/ohio_revised/sections.lmdb', readonly=True)
+env = lmdb.open('lmdb_data/ohio_revised/primary.lmdb', readonly=True)
 with env.begin() as txn:
     cursor = txn.cursor()
     key, value = next(cursor.iternext())
-    print(f'First section: {key.decode()}')
+    print(f'First item: {key.decode()}')
 env.close()
 "
 

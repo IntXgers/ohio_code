@@ -25,7 +25,7 @@
 - **Citations:** 3,386 with citations (45.5%)
 - **Complex Chains:** 184 chains
 - **Size:** 172.5MB LMDB total
-  - sections.lmdb: 153M
+  - primary.lmdb: 153M (administrative rules)
   - citations.lmdb: 2.0M
   - reverse_citations.lmdb: 3.6M
   - chains.lmdb: 11M
@@ -210,16 +210,16 @@ bzcat filename.csv.bz2 | grep "search_term"
 
 ## 🔢 ESTIMATED SIZES
 
-| Corpus | Raw Size | LMDB Size | Sections | Status |
-|--------|----------|-----------|----------|--------|
-| Ohio Revised | ~200MB | ~500MB | 40,000 | ✅ Done |
-| Ohio Admin | 28MB | 173MB | 6,976 | ✅ Done |
-| Ohio Constitution | ~1MB | ~5MB | 200 | ⏳ Next |
-| Ohio Case Law | ~2GB | ~5GB | 500,000 | ⏳ TODO |
-| US Code | TBD | TBD | TBD | 🆕 Raw |
-| CFR | TBD | TBD | TBD | 🆕 Raw |
-| SCOTUS | TBD | TBD | TBD | 🆕 Raw |
-| 6th Circuit | TBD | TBD | TBD | 🆕 Raw |
+| Corpus | Raw Size | LMDB Size | Items | Primary Content | Status |
+|--------|----------|-----------|-------|----------------|--------|
+| Ohio Revised | ~200MB | ~500MB | 40,000 | Statutory sections | ✅ Done |
+| Ohio Admin | 28MB | 173MB | 6,976 | Administrative rules | ✅ Done |
+| Ohio Constitution | ~1MB | ~5MB | 200 | Constitutional sections | ⏳ Next |
+| Ohio Case Law | ~2GB | ~5GB | 500,000 | Court opinions | ⏳ TODO |
+| US Code | TBD | TBD | TBD | Federal statutes | 🆕 Raw |
+| CFR | TBD | TBD | TBD | Federal regulations | 🆕 Raw |
+| SCOTUS | TBD | TBD | TBD | Supreme Court cases | 🆕 Raw |
+| 6th Circuit | TBD | TBD | TBD | Circuit court cases | 🆕 Raw |
 
 ---
 
@@ -247,6 +247,148 @@ bzcat filename.csv.bz2 | grep "search_term"
 - Case outcome probabilities based on judge + case type
 - Judge voting patterns
 - Appointment politics (who appointed which judges)
+
+---
+
+---
+
+## 🔒 LMDB SCHEMA CONTRACT (CRITICAL - DO NOT BREAK!)
+
+**⚠️ THIS IS THE INTERFACE BETWEEN DATA PIPELINE (ohio_code) AND APPLICATION (knowledge service)**
+
+### Standard 5-Database Structure (All Corpuses)
+Every corpus MUST produce exactly 5 LMDB databases with these EXACT names:
+
+1. **primary.lmdb** - Main content (sections/cases/rules/articles)
+2. **citations.lmdb** - Forward citations (what this item references)
+3. **reverse_citations.lmdb** - Backward citations (what cites this item)
+4. **chains.lmdb** - Pre-computed citation chains
+5. **metadata.lmdb** - Corpus-level metadata
+
+### Why "primary.lmdb" Not "sections.lmdb"?
+- **Consistency**: Same name across all corpora (sections, cases, rules, articles, opinions)
+- **Application simplicity**: Knowledge service uses same code for all corpora
+- **No name confusion**: Content type is determined by corpus directory, not database name
+
+### Database Schema Guarantee
+
+#### primary.lmdb Schema
+```json
+{
+  "section_number": "string (unique ID - varies by corpus)",
+  "url": "string",
+  "url_hash": "string",
+  "header": "string",
+  "section_title": "string",
+  "paragraphs": ["array of strings"],
+  "full_text": "string",
+  "word_count": "number",
+  "paragraph_count": "number",
+  "has_citations": "boolean",
+  "citation_count": "number",
+  "in_complex_chain": "boolean",
+  "is_clickable": "boolean",
+  "scraped_date": "ISO8601 string",
+  "enrichment": {
+    "summary": "string (optional)",
+    "legal_type": "string (optional)",
+    "practice_areas": ["array (optional)"],
+    "complexity": "number 1-10 (optional)",
+    "key_terms": ["array (optional)"],
+    "offense_level": "string (optional - criminal only)",
+    "offense_degree": "string (optional - criminal only)"
+  }
+}
+```
+
+#### citations.lmdb Schema
+```json
+{
+  "section": "string",
+  "direct_references": ["array of section IDs"],
+  "reference_count": "number",
+  "references_details": [
+    {
+      "section": "string",
+      "title": "string",
+      "url": "string",
+      "url_hash": "string"
+    }
+  ]
+}
+```
+
+#### reverse_citations.lmdb Schema
+```json
+{
+  "section": "string",
+  "cited_by": ["array of section IDs"],
+  "cited_by_count": "number",
+  "citing_details": [
+    {
+      "section": "string",
+      "title": "string",
+      "url": "string"
+    }
+  ]
+}
+```
+
+#### chains.lmdb Schema
+```json
+{
+  "chain_id": "string",
+  "primary_section": "string",
+  "chain_sections": ["array of section IDs"],
+  "chain_depth": "number",
+  "references_count": "number",
+  "created_at": "ISO8601 string",
+  "complete_chain": [
+    {
+      "section": "string",
+      "title": "string",
+      "url": "string",
+      "url_hash": "string",
+      "full_text": "string",
+      "word_count": "number"
+    }
+  ]
+}
+```
+
+#### metadata.lmdb Schema (corpus_info key)
+```json
+{
+  "total_primary": "number",
+  "primary_with_citations": "number",
+  "complex_chains": "number",
+  "reverse_citations": "number",
+  "build_date": "ISO8601 string",
+  "source": "string (URL)",
+  "version": "string",
+  "builder": "string",
+  "databases": {
+    "primary": "string (description)",
+    "citations": "string (description)",
+    "reverse_citations": "string (description)",
+    "chains": "string (description)",
+    "metadata": "string (description)"
+  }
+}
+```
+
+### Breaking Changes Protocol
+**IF YOU MUST CHANGE THE SCHEMA:**
+
+1. ⚠️ Update this CONTRACT document first
+2. ⚠️ Update ohio_code LMDB builders
+3. ⚠️ Update knowledge service code (both repos)
+4. ⚠️ Update TypedDict schemas in application
+5. ⚠️ Update Pydantic models
+6. ⚠️ Rebuild ALL LMDB databases
+7. ⚠️ Test ALL endpoints
+
+**NEVER change one side without the other!**
 
 ---
 

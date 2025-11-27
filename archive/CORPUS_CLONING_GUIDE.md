@@ -268,7 +268,7 @@ ohio_case_law/data/
 5. **Verify output**:
    ```bash
    ls -la {corpus}/data/enriched_output/comprehensive_lmdb/
-   # Should show: sections.lmdb, citations.lmdb, reverse_citations.lmdb, chains.lmdb, metadata.lmdb
+   # Should show: primary.lmdb, citations.lmdb, reverse_citations.lmdb, chains.lmdb, metadata.lmdb
    ```
 6. **Copy to dist/**:
    ```bash
