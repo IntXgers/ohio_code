@@ -148,4 +148,60 @@ User will tell me to look at these notes. Then likely proceed with:
 3. Run citation analysis on Admin Code
 
 ---
-*Session saved: 2025-11-07*
+
+## CRITICAL NOTES - 2025-11-27
+
+### BEFORE Building Ohio Case Law LMDB
+
+⚠️ **MUST REVIEW ENRICHMENT WITH USER FIRST** ⚠️
+
+- DO NOT build the Case Law LMDB until we review the enrichment strategy together
+- User wants to go over the JSONL enrichment approach before or during the LMDB build
+- We need to ensure we're querying the best possible data
+- The 7 enrichment fields may need adjustment based on case law specifics
+
+**Action Required:**
+1. Review current enrichment fields with user
+2. Discuss if we should pre-enrich the JSONL or enrich during LMDB build
+3. Confirm the 7 fields are optimal for case law queries
+4. Get approval before running the full 175K case build
+
+### LMDB ARCHITECTURE - KEEP SEPARATE ✅
+
+**DECISION: Keep LMDBs separate per corpus (NOT combined)**
+
+**Why Separate is Better:**
+- Agent queries across multiple LMDBs and assembles context for the LLM
+- With 512GB RAM, all LMDBs stay cached in memory → same speed as one combined DB
+- Easier maintenance: rebuild only the corpus that changed
+- Easier debugging: isolate issues to specific corpus
+- Negligible performance difference between separate lookups vs. combined
+
+**How It Works:**
+1. Knowledge service opens all corpus LMDBs at startup (all cached in RAM)
+2. Agent queries primary.lmdb for content
+3. Agent follows citations across corpuses using citation.lmdb
+4. Agent assembles all related content into coherent context
+5. LLM receives assembled text (never touches LMDB directly)
+
+**Example Flow:**
+```
+User asks about ORC 2903.01
+→ Agent queries ohio_revised/primary.lmdb (RAM cached)
+→ Agent checks ohio_revised/citations.lmdb → finds refs to Constitution I-16 and 2 cases
+→ Agent queries ohio_constitution/primary.lmdb for I-16 (RAM cached)
+→ Agent queries ohio_caselaw/primary.lmdb for cases (RAM cached)
+→ Agent assembles: statute + constitutional article + case law
+→ LLM receives complete context bundle
+```
+
+**Architecture:**
+- Build: `dist/ohio_revised/`, `dist/ohio_admin/`, `dist/ohio_constitution/`, `dist/ohio_caselaw/`
+- Deploy: Knowledge service opens all 4 (or eventually 8) at once
+- Query: Agent hops between DBs following citation IDs
+- Performance: With 512GB RAM, all lookups are instant (cached)
+
+**No combined LMDB needed!**
+
+---
+*Session saved: 2025-11-27*

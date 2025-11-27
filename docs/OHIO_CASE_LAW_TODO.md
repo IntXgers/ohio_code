@@ -246,7 +246,7 @@ important_fields = [
 
 **LMDB Databases:**
 ```
-✓ sections.lmdb:          9,369 entries (cases)
+✓ primary.lmdb:           9,369 entries (cases - court opinions)
 ✓ citations.lmdb:         ~5,000-7,000 entries (estimated)
 ✓ reverse_citations.lmdb: ~3,000-5,000 entries (estimated)
 ✓ chains.lmdb:            ~500-1,000 precedent chains (estimated)
